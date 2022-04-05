@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --rufous: #A40101;
+    --viridian-gren: #2ca3ab;
+    --silver: #cacaca;
+    --oragen: #f3610e;
+    --cadet: rgb(11, 87, 149);
+}
+html{
+    height: 100%;
+}
+body{
+    max-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.dash{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1d1b45;
+    padding: 1rem;
+}
+
+.bienvenido{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
+    color: #f3610e;
+    font-size: 40px;
+    margin: auto;
+}
+
+.logo-dash {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin-bottom:50px;  
+}
+.dash2 button{
+    width: 400px;
+    height: 60px;
+    border-radius: 10px 10px 10px 10px;
+    background: #c1c3d0;
+    font-size: 18px;
+    border: solid 2px #f3610e;
+    border-radius: 10px 10px 10px 10px;
+}
+.dash2 button:hover{
+    background-image: linear-gradient(to right, yellow, orange, yellow, orange, yellow, orange, yellow);
+    animation:slidebg 3s linear infinite;
+}
+@keyframes slidebg {
+    to {
+      background-position:30vw;
+    }
+}
+.nombre{
+    margin-bottom: 10px;
+}
+
+.user {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+    background: #c1c3d0;
+    font-size: 18px;
+    border: solid 2px #f3610e;
+    border-radius: 10px 10px 10px 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.buscador {
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    border: solid 1px black;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.buscador1  {
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    background: #262b58;
+    border: solid 2px #2ca3ab;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    color: white;
+}
+.pie1 {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width:480px) {
+    .bienvenido{
+        height: 300px;
+    }
+    .nombre{
+        position: relative;
+       
+    }
+
+}
+
+@media screen and ( min-width:768px){
+    .container {
+        display: flex;
+        flex-direction: row;
+        height: 735px;
+    }
+    .dash2{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .containerdos {
+        overflow: hidden;
+        height: 768px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pie img{
+        overflow: hidden; 
+    }
+
+    .bienvenido{
+        height: 100%;
+    }
+
+    .dash2 button{
+        margin-bottom: 40px;
+    }
+    
+    .nombre{
+        position: relative;
+        bottom: 37%;
+        left: 20%;
+    }
+}
+
+@media screen and ( min-width: 1024px){
+    
+    .nombre{
+        position: relative;
+        bottom: 37%;
+        left: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .nombre{
+        position: relative;
+        bottom: 37%;
+        left: 30%;
+    } 
+    
+    .dash{
+        height: 937px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #1d1b45;
+        padding: 1rem;
+    }
+
+    .containerdos{
+        height: 969px;
+
+    }
+        
+}
+
+

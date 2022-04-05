@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --rufous: #A40101;
+    --viridian-gren: #2ca3ab;
+    --silver: #cacaca;
+    --oragen: #f3610e;
+    --cadet: rgb(11, 87, 149);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    height: 526px;
+   
+}
+
+.container h3{
+    text-align: center;
+}
+
+.cabezera {
+    background: #1d1b45;
+    width: 90%;
+    padding: 20px;
+}
+
+.arriba {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px 50px 50px 50px;
+    float: right;
+}
+
+i {
+    font-size: 20px;
+    color: black;
+    float: left;
+}
+
+.franja2 {
+    width: 100%;
+    
+}
+
+h3 {
+    background: #1d1a45;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.formulario {
+    border: solid 1px black;
+    height: 2000px;
+}
+
+form {
+    background: #c4c4c4;
+    width: 450px;
+    height: 1790px;
+    margin: auto;
+    margin-top: 40px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: solid 1.8px #2ca3ab;
+    border-radius: 3px;
+}
+
+.input2 {
+    width: 400px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: solid 1.8px #2ca3ab;
+}
+
+.desplegable {
+    width: 408px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: solid 1.8px #2ca3ab;
+    border-radius: 3px;
+}
+
+.desplegable2 {
+    width: 410px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: solid 1.8px #2ca3ab;
+    border-radius: 3px;
+}
+
+
+.input3 {
+    width: 380px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+h4 {
+    width: 400px;
+    height: 25px;
+    background: #2ca3ab;
+    color: white;
+    font-style: normal;
+    padding: 8px; 
+    border-radius: 6px 6px 6px 6px;
+    text-align: center;
+    align-items: center;
+    margin: 5px auto;
+}
+
+h5 {
+    color: black;
+    padding: 8px;
+    width: 420px;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.radio{
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    align-items: center;
+}
+
+.rad p{
+    text-align: center;
+    align-items: center;
+}
+
+
+.guardar {
+ background: #f3610e;
+ width: 150px;
+ height: 40px;
+ font-size: 11pt;
+ border: solid 1px white;
+ border-radius: 10px 10px 10px 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: auto;
+}
+
+.guardar a{
+    text-align: center;
+    align-items: center;
+}
+
+.guardar:hover {
+    background-image:     linear-gradient(
+        to right, 
+        #072227,
+        #072227 16.65%,
+        #92A9BD 16.65%,
+        #92A9BD 33.3%,
+        #316B83 33.3%,
+        #316B83 49.95%,
+        #22577A 49.95%,
+        #22577A 66.6%,
+        #2D46B9 66.6%,
+        #2D46B9 83.25%,
+        #00A19D 83.25%,
+        #00A19D 100%,
+        #072227 100%
+       
+       
+       
+      );
+    animation:slidebg 3s linear infinite;
+  }
+  
+  
+  @keyframes slidebg {
+    to {
+      background-position:30vw;
+    }
+  }
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .cabezera {
+        width: 787px;
+    }
+
+    .franja2{
+        width: 827px;
+    }
+    
+    .formulario{
+        width: 820px;
+    }
+    .container{
+        width: 100%;
+    }
+    .guardar{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabezera {
+        width: 96%;
+    }
+
+    .franja2{
+        width: 99.7%;
+    }
+    .formulario h4{
+        width: 970px;
+    }
+    
+    .formulario{
+        width: 80%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .container h3{
+        width: 98%;
+    }
+
+    .container h5{
+        width: 100%;
+    }
+
+    .guardar{
+        margin-bottom: 10px;
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+    }
+    
+    input {
+        width: 460px;
+        height: 40px;
+        margin: 0px, 20px, 0px, 20px;
+    }
+    
+    .input2 { 
+        width: 460px;
+        height: 40px;
+    }
+
+    .desplegable {
+        width: 468px;
+        height: 40px;
+    }
+    
+    .desplegable2 {
+        width: 299px;
+        height: 44px;
+    }
+        
+    .input3 {
+        width: 299px;
+        height: 38px;
+    }
+}
+
+
+
+
+
+
+

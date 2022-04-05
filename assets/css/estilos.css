@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --rufous: #A40101;
+    --viridian-gren: #2ca3ab;
+    --silver: #cacaca;
+    --oragen: #f3610e;
+    --cadet: rgb(11, 87, 149);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+
+p{
+    color:black;
+}
+
+/*index*/
+
+
+header{
+    display: grid;
+    grid-template-areas: 
+    "telefono telefono"
+    "ubicacion ubicacion "
+    "lugar lugar"
+    "logo vacuna"
+    "franja franja";
+}
+
+.fa-iconHead{
+    background-color: rgb(220, 118, 51 );;
+    padding: 6px 6px;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0);
+}
+#información{
+    width: 100%;
+    margin: 2rem 0rem 1rem 0rem;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.login{
+   display: flex;
+   align-items: center;
+    width: 9rem;
+    height: 2.5rem;
+    background-color: rgb(11, 87, 149);
+    padding: 10px 17px;
+    border-radius: 30px;
+}
+.login a{
+   display: flex;
+   text-decoration: none;
+   color: white;
+   font-size: 12px;
+}
+.login i{
+   padding-left: 2px;
+}
+.logo {
+   grid-area: logo;
+   display: flex;
+   justify-content: end;
+   text-decoration: none;
+}
+
+.telefono{
+   grid-area: telefono;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+.telefono i, .ubicacion i{
+   margin-right: 1rem;
+}
+.ubicacion{
+   grid-area: ubicacion;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+
+.lugar,.bu{
+   grid-area:lugar;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   
+}
+
+.login:hover,
+.login:focus {
+   -webkit-animation: pulse 1s;
+   animation: pulse 1s;
+   box-shadow: 0 0 0 2em rgba(224, 29, 29, 0);
+}
+@-webkit-keyframes pulse {
+   0% {
+     box-shadow: 0 0 0 0 var( --rufous);
+   }
+ }
+ 
+@keyframes pulse {
+   0% {
+     box-shadow: 0 0 0 0 var(--viridian-gren);
+   }
+ }
+
+.vacuna{
+   grid-area: vacuna;
+   display: flex;
+   justify-content: start;
+}
+
+.linea{
+   width: 100%;
+   justify-content: end;
+}
+
+.franja{ 
+   grid-area: franja;
+   width: 300px;
+}
+
+.textico{
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   position: absolute;
+   top: 20%;
+   left: 10%;
+}
+.container{ 
+   overflow: hidden;
+   position: relative;
+}
+
+.container img { 
+   width: 100%;
+   height: 100%;
+}
+
+.container p { 
+   font-size: 1.3rem;
+   line-height: 0;
+   color: #f3610e;
+   
+}
+
+.container h3 { 
+   font-size: 1.5rem;
+   color: black;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 300px;
+   text-align: center;
+}
+
+.contenedo{ 
+   display: flex;
+   flex-direction: column-reverse;
+   background-color: #ffffff78;
+   padding: 2rem;
+   font-style: normal;
+}
+
+.flecha1{ 
+   height: 40px;  
+}
+
+.curso1 {
+   text-decoration-line: underline;
+   width: 100px;
+   margin-left: 100px;
+   font-size: 15px;
+}
+
+.logo2{
+   margin: 0px, 20px, 0px;
+   margin-left: 20px;
+   margin-top: -35px;
+   
+}
+
+.signos {
+   display: flex;
+   align-items: center;
+   font-size: 30px;
+}
+
+.check { 
+   height: 20px;
+   margin-top: -30px;
+   margin-left: 100px;
+}
+
+.fiebre, .dolor, .tos, .cabeza, .vomito { 
+   margin-top: -35px;
+   margin-left: 130px;
+   font-size: 20px;
+}
+
+.diag { 
+   font-size: 20px;
+   
+}
+
+.pie-pagina{ 
+   width: 100%;
+   background-color: #161624;
+   color: white;
+}
+
+.pie-texto1 a{
+   color: #ffffff;
+   line-height: 30px;
+   border-bottom: 2px solid gray;
+   font-family: 'Poppins', sans-serif;
+   font-style: normal;
+}
+
+footer {
+    width: 100%;
+    background-image: url("../img/4. covid.jpeg");
+    background-color: #ffffff;
+    background-size: contain;
+}
+
+.copy {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.logo2 {
+    width: 150px;
+    margin-top: 3px;
+    margin-left: 150px;
+}
+
+/*----------MEDIA QUERY INDEX---------*/
+
+@media screen and (min-width:768px){
+   .header{
+      grid-template-areas: 
+      "telefono ubicacion lugar"
+      "franja franja franja "
+      "logo vacuna vacuna";
+   }
+   .logo{
+      text-align: center;
+   }
+   .vacuna{
+      text-align: start;
+   }
+}
+
+@media screen and (min-width:1024px){
+   .header{
+      grid-template-areas: 
+      "logo vacuna telefono ubicacion lugar"
+      "logo vacuna franja franja franja";
+   }
+
+   .franja{
+      height: 30px;
+      width:780px;
+      margin: 10px;
+      text-align: end;
+   }
+
+   .contenedo{
+      flex-direction: row-reverse;
+      justify-content: space-around;
+   
+   }
+   
+   .contenedor1{
+      width: 500px;
+   }
+
+   .pie-pagina{
+      height: 250px;
+   }
+
+   .pie-texto1 a {
+      line-height:50px ;
+   }
+}
+
+/*-----------------LOGIN------------*/
+.body{
+   grid-template-areas: 
+   "caja caja botons"
+   "caja caja caja";
+   
+}
+.caja {
+   grid-template-areas: caja;
+   background: #a8dde0;
+   width: 450px;
+   padding-top: 50px;
+   border-radius: 15px 15px 0px 0px;
+   text-decoration: none;
+   
+}
+
+.cajas {
+   grid-template-areas: cajas;
+   width: 500px;
+   padding-top: 50px;
+   border-radius: 15px 15px 0px 0px;
+   
+}
+
+.botons {
+   grid-template-areas: botons;
+   background: #262b58;
+   width: 100px;
+   height: 50px;
+   font-size: 11pt;
+   border: solid 1px white;
+   border-radius: 10px 10px 10px 10px;
+   text-align: center;
+   margin-bottom: 20px;
+   margin-left: 350px;
+   text-decoration: none;
+   
+}
+
+.botons:hover,
+.raise:focus {
+   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+   background: #f3610e;
+}
+
+.botons a {
+color: white;
+text-decoration: none;
+}
+        
+form {
+background: white;
+width: 450px;
+height: 350px;
+border-radius: 0px 0px 15px 15px;
+}
+
+form h3 {
+color: white;
+text-align: center;
+font-size: 12pt;
+}
+
+form input {
+width: 420px;
+height: 40px;
+font-size: 15pt;
+text-align: center;
+margin-top: 20px;
+font-weight: 500;
+}
+
+form button {
+background: #f3610e;
+color: white;
+width: 150px;
+height: 40px;
+font-size: 11pt;
+border: solid 1px black;
+border-radius: 10px 10px 10px 10px;
+text-align: center;
+text-decoration: none;
+
+}
+
+form button:hover{ /*este es para cambiar cuando el mouse  o la flecha esta encima y cambie el color*/
+   background: #262b58;
+   color: white;
+}
+
+
+
