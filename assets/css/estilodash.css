@@ -79,7 +79,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.user {
+.nombre button {
     width: 200px;
     height: 60px;
     font-size: 20px;
@@ -88,6 +88,15 @@ h1 {
     font-size: 18px;
     border: solid 2px #f3610e;
     border-radius: 10px 10px 10px 10px;
+}
+.nombre button:hover{
+    background-image: linear-gradient(to right, #2ca3ab, #cacaca, #2ca3ab, #cacaca, #2ca3ab, #cacaca, #2ca3ab);
+    animation:slidebg 3s linear infinite;
+}
+@keyframes slidebg {
+    to {
+      background-position:30vw;
+    }
 }
 
 a{

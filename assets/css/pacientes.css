@@ -77,38 +77,28 @@ i {
     border-radius: 10px 10px 10px 10px;
     text-align: center;
     text-decoration: none;
-    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-    -webkit-animation: ani2 0.7s steps(22) forwards;
-   animation: ani2 0.7s steps(22) forwards;
 }
+.pacientesb:hover,
+.pacientesb:focus {
+   background-color: #0cc0ed;
+   -webkit-animation: pulse 6s;
+   animation: pulse 1s;
+   box-shadow: 0 0 0 2em rgba(224, 29, 29, 0);
+}
+@-webkit-keyframes pulse {
+   0% {
+     box-shadow: 0 0 0 0 var( --rufous);
+   }
+ }
+ 
+@keyframes pulse {
+   0% {
+     box-shadow: 0 0 0 0 var(--viridian-gren);
+   }
+ }
 
-.pacientesb:hover {
-    background-color: #1d1b45;
-    -webkit-animation: ani 0.7s steps(22) forwards;
-    animation: ani 0.7s steps(22) forwards;
-}
 
-@-webkit-keyframes ani {
-    from {
-      -webkit-mask-position: 0 0;
-      mask-position: 0 0;
-    }
-    to {
-      -webkit-mask-position: 100% 0;
-      mask-position: 100% 0;
-    }
-  }
-@keyframes ani {
-    from {
-      -webkit-mask-position: 0 0;
-      mask-position: 0 0;
-    }
-    to {
-      -webkit-mask-position: 100% 0;
-      mask-position: 100% 0;
-    }
-}
+
 
 
 .buscador2 {
@@ -184,7 +174,7 @@ td {
         width: 100%;
 
     }
-    
+        
     .franjita img{
         width: 102.5%;
     }

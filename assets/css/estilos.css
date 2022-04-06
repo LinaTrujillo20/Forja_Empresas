@@ -49,11 +49,12 @@ header{
 .login{
    display: flex;
    align-items: center;
-    width: 9rem;
-    height: 2.5rem;
-    background-color: rgb(11, 87, 149);
-    padding: 10px 17px;
-    border-radius: 30px;
+   width: 9rem;
+   height: 2.5rem;
+   background-color: rgb(11, 87, 149);
+   padding: 0px 17px;
+   border-radius: 30px;
+   
 }
 .login a{
    display: flex;
@@ -135,7 +136,7 @@ header{
    align-items: center;
    flex-direction: column;
    position: absolute;
-   top: 20%;
+   top: 7%;
    left: 10%;
 }
 .container{ 
@@ -152,7 +153,7 @@ header{
    font-size: 1.3rem;
    line-height: 0;
    color: #f3610e;
-   
+ 
 }
 
 .container h3 { 
@@ -305,32 +306,35 @@ footer {
 .caja {
    grid-template-areas: caja;
    background: #a8dde0;
-   width: 450px;
+   width: 390px;
    padding-top: 50px;
    border-radius: 15px 15px 0px 0px;
    text-decoration: none;
+   text-align: center;
+   margin: auto 4px;
    
 }
 
 .cajas {
    grid-template-areas: cajas;
-   width: 500px;
+   width: 390px;
    padding-top: 50px;
    border-radius: 15px 15px 0px 0px;
+   text-align: center;
    
 }
 
 .botons {
    grid-template-areas: botons;
    background: #262b58;
-   width: 100px;
+   width: 120px;
    height: 50px;
    font-size: 11pt;
    border: solid 1px white;
    border-radius: 10px 10px 10px 10px;
    text-align: center;
-   margin-bottom: 20px;
-   margin-left: 350px;
+   margin-bottom: 10px;
+   margin-left: 260px;
    text-decoration: none;
    
 }
@@ -349,44 +353,165 @@ text-decoration: none;
 }
         
 form {
-background: white;
-width: 450px;
-height: 350px;
-border-radius: 0px 0px 15px 15px;
+   
+ background: white;
+ width: 390px;
+ height: 360px;
+ border-radius: 0px 0px 15px 15px;
+ margin: auto 4px;
 }
 
 form h3 {
-color: white;
-text-align: center;
-font-size: 12pt;
+ color: white;
+ text-align: center;
+ font-size: 12pt;
 }
 
 form input {
-width: 420px;
-height: 40px;
-font-size: 15pt;
-text-align: center;
-margin-top: 20px;
-font-weight: 500;
+ width: 365px;
+ height: 40px;
+ font-size: 15pt;
+ text-align: center;
+ margin-top: 20px;
+ font-weight: 500;
+ border-radius: 5px;
+ border-color: #2ca3ab;
+ margin: 12px;
+}
+.texto a{
+   margin: 10px 20px 10px 80px;
+   color:#161624
+}
+
+form a{
+   margin: 0.50rem;
+   text-decoration: none;
+   color: white;
 }
 
 form button {
-background: #f3610e;
-color: white;
-width: 150px;
-height: 40px;
-font-size: 11pt;
-border: solid 1px black;
-border-radius: 10px 10px 10px 10px;
-text-align: center;
-text-decoration: none;
-
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   background: #f3610e;
+   color: white;
+   width: 150px;
+   height: 40px;
+   margin: 10px 0px 5px 120px;
+   font-size: 11pt;
+   border: solid 1px black;
+   border-radius: 10px 10px 10px 10px;
+   text-decoration: none;
 }
 
 form button:hover{ /*este es para cambiar cuando el mouse  o la flecha esta encima y cambie el color*/
    background: #262b58;
    color: white;
 }
+@media screen and (min-width:400px){
+   .body{
+      grid-template-areas: 
+      "caja caja botons"
+      "caja caja caja"
+   }
+   .caja{
+      width: 460px;
+      margin-left:20px;
+   }
 
+   form{
+         width:460px;
+         margin-left: 20px;
+   }
+
+   form input{
+         width: 405px;
+         margin: 20px; 
+   }
+   .botons{
+         margin: 0px 0px 10px 80px;
+   }
+
+   .texto a{
+      margin: 10px 20px 10px 126px;
+   }
+   
+   form button{
+         margin: 10px 20px 10px 160px;
+         
+   }    
+   
+}
+   
+
+@media screen and (min-width:768px) {
+   .body{
+      grid-template-areas: 
+      "caja caja botons"
+      "caja caja caja"
+   }
+   .caja{
+         width: 500px;
+         margin-left: 120px;
+   }
+
+   form{
+         width:500px;
+         margin-left: 120px;
+   }
+
+   form input{
+         width: 450px;
+         margin: 20px; 
+   }
+   .botons{
+         margin: 0px 0px 10px 500px;
+   }
+
+   .texto a{
+      margin: 10px 20px 10px 150px;
+   }
+   
+   form button{
+         margin: 10px 20px 10px 160px;
+         
+   }    
+   
+}
+
+@media screen and (min-width:1024px) {
+   .body{
+      grid-template-areas: 
+      "caja caja botons"
+      "caja caja caja"
+   }
+   
+   .caja{
+         width: 500px;
+         margin-left: 400px;
+      }
+
+   form{
+         width:500px;
+         margin-left: 400px;
+   }
+
+   form input{
+         width: 450px;
+         margin: 20px; 
+   }
+   .botons{
+         margin: 0px 0px 10px 775px;
+   }
+
+   .texto a{
+      margin: 10px 20px 10px 150px;
+   }
+   
+   form button{
+         margin: 10px 20px 10px 160px;
+         
+   }    
+}
 
 
