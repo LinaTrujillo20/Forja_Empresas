@@ -2,10 +2,10 @@
 
 :root{
     --rufous: #A40101;
-    --viridian-gren: #2ca3ab;
-    --silver: #cacaca;
-    --oragen: #f3610e;
-    --cadet: rgb(11, 87, 149);
+    --viridian-gren: #2CA3AB;
+    --silver: #CACACA;
+    --oragen: #F3610E;
+    --cadet: #1D1B45;
 }
 
 body {
@@ -24,17 +24,19 @@ body {
 }
 
 .cabezera1{
-    background: #1d1b45;
-    width: 440px;
-    height: 80px;
+    background: #1D1B45;
+    width: 93%;
     padding: 20px;
 }
 
 .arriba {
-    width: 50px;
-    height: 50px;
+    width: 49px;
+    height: 49px;
     border-radius: 50px 50px 50px 50px;
     float: right;
+    margin: 4px;
+    background-color: var(--silver);
+    border: solid 2px var(--viridian-gren);
 }
 
 i {
@@ -44,6 +46,9 @@ i {
 
 .franja2 {
     width: 480px;
+}
+#busqueda{
+    margin:5px;
 }
 
 .pacientesa {
@@ -67,7 +72,7 @@ i {
 
 
 .pacientesb{
-    background: #f3610e;
+    background: var(--oragen);
     color: white;
     width: 130px;
     height: 40px;
@@ -80,7 +85,7 @@ i {
 }
 .pacientesb:hover,
 .pacientesb:focus {
-   background-color: #0cc0ed;
+   background-color: var(--viridian-gren);
    -webkit-animation: pulse 6s;
    animation: pulse 1s;
    box-shadow: 0 0 0 2em rgba(224, 29, 29, 0);
@@ -101,18 +106,18 @@ i {
     height: 38px;
     margin-right: 5px;
     font-size: 15px;
-    border: solid 1px rgb(51, 204, 209);
+    border: solid 1px var(--viridian-gren);
     text-align: center;
     float:right ;
     border-radius: 10px;
 }
 
 .buscador2b {
-    background: #262b58;
+    background: var(--cadet);
     width: 40px;
     height: 40px;
     font-size: 15px;
-    border: solid 2px #2ca3ab;
+    border: solid 2px var(--viridian-gren);
     border-radius: 10px 10px 10px 10px;
     text-align: right;
     float: right;
@@ -123,21 +128,23 @@ i {
 }
 
 table {
-    background: grey;
-    width: 180px;
+    width: 100px;
     margin: auto;
+    border: solid 1px var(--viridian-gren);
 }
 
 td {
-    background: #262b58;
+    background: var(--cadet);
     color: white;
-    height: 60px;
+    height: 55px;
+    border: solid 1px var(--viridian-gren);
 }
 
 .editar {
-    background: #2ca3ab;
+    background: var(--viridian-gren);
     width: 80px;
-    height: 50px;
+    height: 30px;
+    font-size: 12px;
     border-radius: 5px;
 }
 

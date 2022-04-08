@@ -2,10 +2,10 @@
 
 :root{
     --rufous: #A40101;
-    --viridian-gren: #2ca3ab;
-    --silver: #cacaca;
-    --oragen: #f3610e;
-    --cadet: rgb(11, 87, 149);
+    --viridian-gren: #2CA3AB;
+    --silver: #CACACA;
+    --oragen: #F3610E;
+    --cadet: #1D1B45;
 }
 
 body {
@@ -26,17 +26,23 @@ body {
     text-align: center;
 }
 
-.cabezera {
+.cabezera1{
     background: #1d1b45;
     width: 93%;
     padding: 20px;
 }
-
+.cabezera1 a{
+    display: flex;
+    justify-content: center;
+}
 .arriba {
-    width: 50px;
-    height: 50px;
+    width: 49px;
+    height: 49px;
     border-radius: 50px 50px 50px 50px;
     float: right;
+    margin: 4px;
+    background-color: var(--silver);
+    border: solid 2px #2ca3ab;
 }
 
 i {
@@ -60,11 +66,12 @@ h3 {
 .formulario {
     border: solid 1px black;
     height: 2000px;
+    width: 470px;
 }
 
 form {
-    background: #c4c4c4;
-    width: 450px;
+    background: var(--silver);
+    width: 420px;
     height: 1790px;
     margin: auto;
     margin-top: 40px;
@@ -73,7 +80,7 @@ form {
 }
 
 input {
-    width: 400px;
+    width: 375px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
@@ -83,7 +90,7 @@ input {
 }
 
 .input2 {
-    width: 400px;
+    width: 377px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
@@ -92,7 +99,7 @@ input {
 }
 
 .desplegable {
-    width: 408px;
+    width: 382px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
@@ -102,7 +109,7 @@ input {
 }
 
 .desplegable2 {
-    width: 410px;
+    width: 384px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
@@ -114,7 +121,7 @@ input {
 
 
 .input3 {
-    width: 380px;
+    width: 377px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
@@ -123,7 +130,7 @@ input {
 }
 
 h4 {
-    width: 400px;
+    width: 379px;
     height: 25px;
     background: #2ca3ab;
     color: white;
