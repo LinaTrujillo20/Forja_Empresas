@@ -17,7 +17,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 475px;
+    width: 100%;
     height: 526px;
    
 }
@@ -28,7 +28,7 @@ body {
 
 .cabezera1{
     background: #1d1b45;
-    width: 93%;
+    width: 88%;
     padding: 20px;
 }
 .cabezera1 a{
@@ -52,7 +52,7 @@ i {
 }
 
 .franja2 {
-    width: 101.4%;
+    width: 100%;
     
 }
 
@@ -66,12 +66,12 @@ h3 {
 .formulario {
     border: solid 1px black;
     height: 2000px;
-    width: 470px;
+    width: 98%;
 }
 
 form {
     background: var(--silver);
-    width: 420px;
+    width: 92%;
     height: 1790px;
     margin: auto;
     margin-top: 40px;
@@ -80,40 +80,40 @@ form {
 }
 
 input {
-    width: 375px;
+    width: 258px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 18px;
     border: solid 1.8px #2ca3ab;
     border-radius: 3px;
 }
 
 .input2 {
-    width: 377px;
+    width: 257px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 18px;
     border: solid 1.8px #2ca3ab;
 }
 
 .desplegable {
-    width: 382px;
+    width: 265px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 18px;
     border: solid 1.8px #2ca3ab;
     border-radius: 3px;
 }
 
 .desplegable2 {
-    width: 384px;
+    width: 265px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 18px;
     border-radius: 3px;
     border: solid 1.8px #2ca3ab;
     border-radius: 3px;
@@ -121,16 +121,16 @@ input {
 
 
 .input3 {
-    width: 377px;
+    width: 258px;
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 18px;
     
 }
 
 h4 {
-    width: 379px;
+    width: 265px;
     height: 25px;
     background: #2ca3ab;
     color: white;
@@ -145,8 +145,8 @@ h4 {
 h5 {
     color: black;
     padding: 8px;
-    width: 420px;
-    font-size: 15px;
+    width: 283px;
+    font-size: 13px;
     align-items: center;
     text-align: center;
 }
@@ -174,7 +174,7 @@ h5 {
  display: flex;
  align-items: center;
  justify-content: center;
- margin: auto;
+ margin: 10px 10px 12px 86px;
 }
 
 .guardar a{
@@ -221,14 +221,37 @@ a {
 
 
 @media screen and (min-width:768px) {
-    .cabezera {
+    .cabezera1 {
         width: 787px;
     }
+
+    form{
+        width: 90%;
+        height: auto;
+    }
+
 
     .franja2{
         width: 827px;
     }
-    
+    input{
+        width: 91%;
+    }
+    .input2{
+        width: 44%;
+    }
+
+    .input3{
+        width: 43%;
+    }
+    .desplegable{
+        width: 45%;
+    }
+
+    .desplegable2{
+        width:44% ;
+    }
+
     .formulario{
         width: 820px;
     }
@@ -238,10 +261,20 @@ a {
     .guardar{
         margin-bottom: 10px;
     }
+    h4{
+        width: 90%;
+    }
+    h5{
+        width: 90%;
+        margin-left: 10px;
+    }
+    .guardar{
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    .cabezera {
+    .cabezera1{
         width: 96%;
     }
 
@@ -285,12 +318,12 @@ a {
     }
     
     .input2 { 
-        width: 460px;
+        width: 286px;
         height: 40px;
     }
 
     .desplegable {
-        width: 468px;
+        width: 295px;
         height: 40px;
     }
     
