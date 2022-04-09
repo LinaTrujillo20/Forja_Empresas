@@ -84,7 +84,7 @@ input {
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
-    margin-left: 18px;
+    margin-left: 13px;
     border: solid 1.8px #2ca3ab;
     border-radius: 3px;
 }
@@ -94,7 +94,7 @@ input {
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
-    margin-left: 18px;
+    margin-left: 13px;
     border: solid 1.8px #2ca3ab;
 }
 
@@ -103,7 +103,7 @@ input {
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
-    margin-left: 18px;
+    margin-left: 13px;
     border: solid 1.8px #2ca3ab;
     border-radius: 3px;
 }
@@ -113,7 +113,7 @@ input {
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
-    margin-left: 18px;
+    margin-left: 13px;
     border-radius: 3px;
     border: solid 1.8px #2ca3ab;
     border-radius: 3px;
@@ -125,7 +125,7 @@ input {
     height: 40px;
     font-size: 14px;
     margin-top: 20px;
-    margin-left: 18px;
+    margin-left: 13px;
     
 }
 
@@ -145,7 +145,7 @@ h4 {
 h5 {
     color: black;
     padding: 8px;
-    width: 283px;
+    width: 270px;
     font-size: 13px;
     align-items: center;
     text-align: center;
@@ -218,6 +218,43 @@ a {
     font-size: 15px;
 }
 
+@media screen and (min-width:400px) {
+    .cabezera1{
+        width: 90%;
+    }
+
+    input{
+        width: 320px;
+        margin-left: 30px;
+
+    }
+    .input2, .input3{
+        width: 320px;
+        margin-left: 30px;
+    }
+
+    .desplegable, .desplegable2{
+        width: 325px;
+        margin-left: 25px;
+    }
+
+    h4{
+        width: 326px;
+    }
+    h5{
+        width: 350px;
+    }
+    .guardar{
+        margin: 10px 10px 12px 123px;
+    }
+    form{
+        height: 1733px;
+    }
+
+    .formulario{
+        justify-content: center;
+    }
+}
 
 
 @media screen and (min-width:768px) {
@@ -282,7 +319,7 @@ a {
         width: 99.7%;
     }
     .formulario h4{
-        width: 970px;
+        width: 827px;
     }
     
     .formulario{
@@ -307,34 +344,73 @@ a {
     }
 
     form {
-        width: 100%;
+        width: 105%;
         height: 100%;
     }
     
     input {
-        width: 460px;
+        width: 394px;
         height: 40px;
         margin: 0px, 20px, 0px, 20px;
     }
     
     .input2 { 
-        width: 286px;
+        width: 394px;
         height: 40px;
     }
 
     .desplegable {
-        width: 295px;
-        height: 40px;
+        width: 401px;
+        height: 43px;
     }
     
     .desplegable2 {
-        width: 299px;
+        width: 247px;
         height: 44px;
     }
         
     .input3 {
-        width: 299px;
+        width: 278px;
         height: 38px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .formulario{
+        width: 1100px;
+        height: auto;
+    }
+    
+    form{
+        width: 1000px;
+        height: auto;
+    }
+    input{
+        width: 234px;
+        margin: 16px -2px -3px 40px ;
+
+    }
+
+    .input2{
+        width: 425px;
+        margin: 10px 5px 7px 40px;
+
+    }
+    
+    .desplegable{
+        width:431px;
+        margin: 10px 5px 7px 40px;
+    }
+    .formulario h4{
+         width: 946px;
+    }
+    .desplegable2{
+        width:287px ;
+        margin:10px -14px 7px 34px;
+    }
+    .input3{
+        width: 295px;
+        margin: 10px 0px 7px 32px;
     }
 }
 

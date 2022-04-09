@@ -196,7 +196,7 @@ a{
     } 
     
     .dash{
-        height: 937px;
+        height: 935px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -209,6 +209,12 @@ a{
         height: 969px;
 
     }
+    .pie1{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
         
 }
 

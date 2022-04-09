@@ -306,12 +306,12 @@ footer {
 .caja {
    grid-template-areas: caja;
    background: #a8dde0;
-   width: 345px;
+   width: 305px;
    padding-top: 50px;
    border-radius: 15px 15px 0px 0px;
    text-decoration: none;
    text-align: center;
-   margin: auto 15px;
+   margin: 0px 15px 0px 15px;
    
 }
 
@@ -334,7 +334,7 @@ footer {
    border-radius: 10px 10px 10px 10px;
    text-align: center;
    margin-bottom: 10px;
-   margin-left: 240px;
+   margin-left: 140px;
    text-decoration: none;
    
 }
@@ -355,10 +355,10 @@ text-decoration: none;
 form {
    
  background: white;
- width: 345px;
- height: 320px;
+ width: 305px;
+ height: 319px;
  border-radius: 0px 0px 15px 15px;
- margin: auto 15px;
+ margin: 0px 15px 0px 15px;
 }
 
 form h3 {
@@ -368,9 +368,9 @@ form h3 {
 }
 
 form input {
- width: 313px;
+ width: 271px;
  height: 40px;
- font-size: 15pt;
+ font-size: 14pt;
  text-align: center;
  margin-top: 20px;
  font-weight: 500;
@@ -379,7 +379,7 @@ form input {
  margin: 12px;
 }
 .texto a{
-   margin: 10px 20px 10px 68px;
+   margin: 10px 20px 10px 51px;
    color:#161624
 }
 
@@ -397,7 +397,7 @@ form button {
    color: white;
    width: 150px;
    height: 40px;
-   margin: 10px 0px 5px 100px;
+   margin: 10px 0px 5px 86px;
    font-size: 11pt;
    border: solid 1px black;
    border-radius: 10px 10px 10px 10px;
@@ -423,6 +423,7 @@ form button:hover{ /*este es para cambiar cuando el mouse  o la flecha esta enci
          width:380px;
          margin-left: 17px;
    }
+   
 
    form input{
          width: 333px;
@@ -433,11 +434,11 @@ form button:hover{ /*este es para cambiar cuando el mouse  o la flecha esta enci
    }
 
    .texto a{
-      margin: 10px 20px 10px 82px;
+      margin: 10px 24px 10px 79px;
    }
    
    form button{
-         margin: 10px 20px 10px 118px;
+      margin: -15px 20px 10px 118px;
          
    }    
    
@@ -487,13 +488,13 @@ form button:hover{ /*este es para cambiar cuando el mouse  o la flecha esta enci
    }
    
    .caja{
-         width: 500px;
-         margin-left: 400px;
-      }
+      width: 500px;
+      margin-left: 260px;
+   }
 
    form{
-         width:500px;
-         margin-left: 400px;
+      width:500px;
+      margin-left: 260px;
    }
    
 
@@ -502,19 +503,32 @@ form button:hover{ /*este es para cambiar cuando el mouse  o la flecha esta enci
          margin: 20px; 
    }
    .botons{
-         margin: 0px 0px 10px 775px;
+         margin: 0px 0px 13px 640px;
    }
 
    .texto{
       position: relative;
-      bottom: 35px;
-      
+      bottom: 35px;  
    }
    
    form button{
-      margin: -30px 0px 20px 177px
-         
+      margin: -30px 0px 20px 177px    
    }    
 }
+
+@media screen and (min-width:1200px) {
+
+   .caja{
+      width: 500px;
+      margin: 0px 380px;
+   }
+
+   form{
+      width:500px;
+      margin: 0px 380px 20px;
+   }
+}
+
+
 
 
