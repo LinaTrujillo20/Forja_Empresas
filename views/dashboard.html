@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/estilodash.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/4fcb02d961.js" crossorigin="anonymous"></script>
     <title>Dashboard</title>
 </head>
 
-<body>
-   
+<body> 
+
 <div class="container">
     <div class="dash">
           <img class="logo-dash" src="../assets/img/logo.png" alt="">
@@ -32,11 +33,11 @@
                 <h3>BIENVENIDOS</h3> 
             </div>
            
-            <div class="busqueda">
-                <input class="buscador" type="text" max length="30"  placeholder="Digite el número de documento">
-                <button class="buscador1"> <a href="#"> <i style="color: white;" class="fa fa-search"></i></a></button>
-                <button class="buscador1"><a href="#"><i style="color: white;" class="fa fa-rotate-right"></a></i> </button>
-            </div>
+            <form class="busqueda" method="post" action="" id="busqueda">
+                <input  id="buscador" class="buscador" type="number" max length="30"  placeholder="Digite el número de documento">
+                <button class="buscador1" type="submit"><i style="color: white;" class="fa fa-search"></i></button>
+                <button class="buscador1" type="submit"><i style="color: white;" class="fa fa-rotate-right"></i></button>
+            </form>
         </section> 
 
         <section class="pie">
@@ -44,5 +45,6 @@
          </section>
     </div>
 </div>
+<script src="../assets/js/dashboard.js"></script>
 </body>
 </html>

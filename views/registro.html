@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/regis.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/4fcb02d961.js" crossorigin="anonymous"></script>
     <title>Formulario</title>
 </head>
@@ -26,33 +27,31 @@
   </section><br><br><br>
   <h3>REGISTRO USUARIO NUEVO</h3>
 
-  <section class="formulario">
-
-      <form id="contenidop">
+  <form id="formulary" class="formulario" action="" method="post">
+    <section id="contenidop">
 
         <div class="parteuno">
-          <input type="date"  placeholder="" >
-          <input type="text"  placeholder=" N registro" ><br><br>
+          <input type="date"  placeholder="" required>
+          <input type="text"  placeholder=" N registro" required><br><br>
         </div>
         
         <h4><i class="fa fa-user"></i> DATOS DEL PACIENTE</h4> 
 
-        <input class="input2" type="text"  placeholder="Escribe tu nombre">
-        <input class="input2" type="text"  placeholder="Apellidos"><br>
-        <input class="input2" type="text"  placeholder="Número de identificación">
-        <select class="desplegable" placeholder="Tipo de documento" >
+        <input id="nombre" class="input2" type="text"  placeholder="Escribe tu nombre" required>
+        <input class="input2" type="text"  placeholder="Apellidos" required><br>
+        <input class="input2" type="text"  placeholder="Número de identificación" required>
+        <select class="desplegable" placeholder="Tipo de documento" required>
           <option value="">Tipo de documento</option>
           <option value="TI">Tarjeta de Identidad</option>
           <option value="CC">Cédula de Ciudadania</option>
           <option value="CE">Cédula de Extrajeria</option>
         </select>
 
-        <input class="input2" type="date"  placeholder="" >
-        <input class="input2" type="text"  placeholder="Edad" ><br><br>
+        <input class="input2" type="text"  placeholder="Edad" required><br><br>
 
         <h4> <i class="fa fa-map-marker"></i>INFORMACIÓN DE CONTACTO</h4> 
 
-        <select class="desplegable" placeholder="" >
+        <select class="desplegable" placeholder="" required>
           <option value="">Selecciona una opción...</option>
             <option value="Abejorral">Abejorral</option>
             <option value="Abrego">Abrego</option>
@@ -1174,23 +1173,23 @@
             <option value="Zipaquirá">Zipaquirá</option>
             <option value="Zona Bananera">Zona Bananera</option>
         </select>
-        <input class="input2" type="date"  placeholder="Municipio de recidencia" ><br>
-        <input class="input2" type="text"  placeholder="Dirección" >
-        <input class="input2" type="text"  placeholder="Correo" ><br>
+        <input class="input2" type="date"  placeholder="Municipio de recidencia" required><br>
+        <input class="input2" type="text"  placeholder="Dirección" required>
+        <input class="input2" type="text"  placeholder="Correo" required><br>
           
-        <input class="input2" type="text"  placeholder="Teléfono fijo" >
-        <input class="input2" type="text"  placeholder="Celular"> <br> <br>
+        <input class="input2" type="text"  placeholder="Teléfono fijo" required>
+        <input class="input2" type="text"  placeholder="Celular" required> <br> <br>
 
         <h4> <i class="fa fa-heartbeat"> </i>ESTADO DE SALUD</h4>
           
 
-        <select class="desplegable2" placeholder="" >
+        <select class="desplegable2" placeholder="" required >
           <option value="">Prexistencias</option>
           <option value="N/a">No aplica</option>
           <option value="Ca">Cáncer</option>
           <option value="Di">Diabetes</option>
         </select>
-        <select class="desplegable2" placeholder="" >
+        <select class="desplegable2" placeholder="" required>
           <option value="">Discapacidad</option>
           <option value="N/a">--No aplica--</option>
           <option value="">Visual</option>
@@ -1198,28 +1197,26 @@
           <option value="">Auditiva</option>
           <option value="">Múltiple</option>
         </select>
-        <input class="input3" type="text"  placeholder="Alergias" ><br><br>
+        <input class="input3" type="text"  placeholder="Alergias" required><br><br>
 
         <h5>¿El paciente se ha realizado la prueba del Covid con anterioridad y esta ha salido positiva?</h5>
-        <div class="rad">   
+        <div class="rad" required>   
           <p>Si<input class="radio" type="radio"></p>
           <p>No<input class="radio" type="radio"></p>
         </div>
         
-        <h5>¿El paciente ha tenido un contaco estrecho con una persona confirmada o sospechosa Covid-19 en los últimos 14 días?</h5>
-        <div class="rad">   
+        <h5>¿El paciente ha tenido un contacto estrecho con una persona confirmada o sospechosa Covid-19 en los últimos 14 días?</h5>
+        <div class="rad" required>   
           <p>Si<input class="radio" type="radio"></p>
           <p>No<input class="radio" type="radio"></p>
         </div>
-    </form><br><br>
+    </section><br><br>
 
-      <button class="guardar">
-        <a href="./pacientes.html">Guardar</a>
-      </button>
- </section><br> 
+     <button class="guardar" type="submit">Guardar</button>
+  </form><br> 
 
 </div>
-
+<script src="../assets/js/registro.js"></script>
 </body>
      
 </html>

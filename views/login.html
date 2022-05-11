@@ -25,20 +25,19 @@
         </div>
 
         <div id="form">
-            <form  method="POST" action="">
+            <form  id="formulario" method="POST" action="">
 
-             <input type="text" max length="30"  placeholder="Usuario" ><br><br>
+             <input id="usuario" type="text" max length="30"  placeholder="Usuario" required ><br><br>
                 
-             <input type="password" max length="20"  placeholder="Contraseña"  name="password"><br><br><br><br>
+             <input id="contraseña" type="password" max length="20"  placeholder="Contraseña"  name="password" required><br><br><br><br>
              <div class="texto">
                     <a style="font-weight: 600;" href="">¿Olvidaste tu contraseña?</a><br><br>
              </div>
                 
-                
-                <button type="submit" > <a href="./dashboard.html"> INGRESAR</a></button>
-                
+            <button  type="submit"><a>INGRESAR</a></button>
             </form>
         </div>
     </div>
+<script src="../assets/js/login.js"></script>
 </body>
 </html>
