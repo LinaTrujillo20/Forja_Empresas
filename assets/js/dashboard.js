@@ -66,7 +66,7 @@ busqueda.addEventListener('submit',(e)=>{
                 confirmButtonText: 'Registrar'
               }).then((result) => {
                 if (result.isConfirmed) {
-                  window.location.href="registro.html"
+                  window.location.href="vacunacion.html"
                   
                 }
               })
